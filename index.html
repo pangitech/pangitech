@@ -14,13 +14,13 @@
             color: #222;
         }
         img {
-            img {
-			display: block;
-			margin: 0 auto;
-			max-width: 500px;
-			height: auto;
-		}
-        }
+	    max-width: 90%;
+	    width: 500px;
+	    height: auto;
+	    display: block;
+	    margin: 0 auto;
+	}
+
         h1 {
             font-size: 2.8em;
             margin-top: 40px;
@@ -39,9 +39,13 @@
         }
     </style>
 </head>
-<body>
-    <img src="Logo_PanGiTech.png" alt="PanGiTech Logo" />
-    <h1>Presto online</h1>
-    <p>Contattaci: <a href="mailto:info@pangitech.it">info@pangitech.it</a></p>
-</body>
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
 </html>
