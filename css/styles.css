@@ -87,12 +87,22 @@
 
 /* Inseriti da me */
 /* Logo/immagine in hero */
-.hero-logo {
-  display: block;
-  max-width: 500px;   /* come già volevi */
+.hero-logo{
+  display:block;
+  width: clamp(140px, 28vw, 420px); /* min 140px, poi 28% della viewport, max 420px */
+  max-width: 100%;
+  max-height: 18vh;                 /* non supera ~18% dell’altezza visibile */
   height: auto;
-  margin: auto; /* sopra 30px, centrata orizzontalmente */
+  margin: 0 auto 1rem;              /* centrato */
 }
+
+/* Su schermi piccoli: un po’ più largo ma sempre limitato */
+@media (max-width: 576px){
+  .hero-logo{
+    width: clamp(120px, 60vw, 260px);
+    max-height: 16vh;
+  }
+
 
 /* definisci (o riusa) il colore brand una volta sola */
 :root{
