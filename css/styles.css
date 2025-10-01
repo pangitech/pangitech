@@ -102,8 +102,7 @@
     width: clamp(120px, 60vw, 260px);
     max-height: 16vh;
   }
-
-
+}
 /* definisci (o riusa) il colore brand una volta sola */
 :root{
   --brand: #ff1493;  /* cambia qui il tuo colore */
