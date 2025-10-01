@@ -86,7 +86,7 @@
 }
 
 /* Inseriti da me */
-/* Logo/immagine in hero */
+/* Logo hero: sempre dentro la finestra */
 .hero-logo{
   display:block;
   width: clamp(140px, 28vw, 420px); /* min 140px, poi 28% della viewport, max 420px */
@@ -103,6 +103,8 @@
     max-height: 16vh;
   }
 }
+
+
 /* definisci (o riusa) il colore brand una volta sola */
 :root{
   --brand: #ff1493;  /* cambia qui il tuo colore */
